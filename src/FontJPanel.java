@@ -1,5 +1,5 @@
 /*FIG 15.11*/
-package chapt15graphics;
+
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -13,10 +13,15 @@ public class FontJPanel extends JPanel{
    g.drawString("Monospaced 24 point italic", 20, 50);
    g.setFont(new Font("SansSerif", Font.PLAIN, 14));
    g.drawString("SansSerif 14 point plain", 20, 70 );
-   g.setColor(Color.Red);
-   g.setFont(new Font("Serif", Font.BOLD, Font.ITALIC, 18));
+   g.setColor(Color.RED);
+   //RED needs all capitals because it is a static property
+   
+    g.setFont(new Font("Serif", Font.BOLD + Font.ITALIC, 18));
+   //g.setFont(new Font("Serif", Font.BOLD, Font.ITALIC, 18));
+    //Needed + between 2 integer static values
    g.drawString(g.getFont().getName() + " " +
        g.getFont().getSize() +
        " point bold italic.", 20, 90);
    }  
 }
+ 

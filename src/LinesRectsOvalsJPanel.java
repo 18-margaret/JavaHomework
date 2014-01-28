@@ -1,5 +1,6 @@
 /*FIG 15.18*/
-package chapt15graphics;
+
+import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 public class LinesRectsOvalsJPanel extends JPanel {
