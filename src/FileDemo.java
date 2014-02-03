@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class FileDemo 
   {
     public static void main(String[] args){
-        Scanner scanner = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         System.out.println("Enter file or dorectory name: ");
         analyzePath(input.nextLine());
      }
