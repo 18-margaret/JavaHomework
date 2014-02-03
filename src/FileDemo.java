@@ -7,14 +7,14 @@ public class FileDemo
   {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter file or dorectory name: ");
+        System.out.println("Enter file or directory name: ");
         analyzePath(input.nextLine());
      }
     
     public static void analyzePath(String path)
       {
-    File name = new File(path);
-    if (name.exists())
+          File name = new File(path);
+       if (name.exists())
         {
         System.out.printf("%s%s\n%s\n%s\n%s\n%s\n%s%s\n%s%s\n%s%s\n%s%s", name.getName(),
                 "exists", (name.isFile()? "is a file":"is not a file"),
@@ -34,7 +34,7 @@ public class FileDemo
                    System.out.println(directoryName);
               }
                
-            else//not file or directory, output error message
+      else//not file or directory, output error message
            {
          System.out.printf("%s %s", path, "does not exist.");
             
