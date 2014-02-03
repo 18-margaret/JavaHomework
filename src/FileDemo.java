@@ -8,6 +8,7 @@ public class FileDemo
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter file or dorectory name: ");
+        //VARIABLE input NOT FOUND
         analyzePath(input.nextLine());
      }
     
